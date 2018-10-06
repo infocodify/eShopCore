@@ -2,7 +2,7 @@
 Simple Asp.Net Core 2 ecommerce web application
 
 
-a.  Asp.Net Core 2/2.1 MVC \n
+a.  Asp.Net Core 2/2.1 MVC /n
 b.  Dependency Injection Repository
 c.  BootStrap 4.1.2
 d.  Sql Server for the Database

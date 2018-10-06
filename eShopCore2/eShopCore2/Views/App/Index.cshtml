@@ -1,0 +1,23 @@
+﻿@model AppViewModel
+
+<h2>@Model.Title</h2>
+
+<div class="row">
+    @foreach (var product in Model.Products)
+    {
+
+        <div class="col-xl-4 col-md-4 p-sm-2">
+            <div class="img-thumbnail">
+                <img src="@product.ImageThumbnailUrl" alt="Image Description" style="padding:10px;" class="img-fluid"/>
+                <div class="figure-caption">
+                    <h3 class="carousel-item-right">@product.Price.ToString("c")</h3>
+                    <h3>
+                        <a asp-controller="App" asp-action="Details" asp-route-id="@product.Id">@product.Name</a> 
+                    </h3>
+                    <p>@product.ShortDescription</p>
+                </div>
+            </div>
+        </div>
+
+    }
+    </div>
